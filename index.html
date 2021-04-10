@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <section class="section">
+      <div class="head"><h2>შენს დაბადებისდღემდე დარჩა...</h2></div>
+      <hr />
+      <div class="box">
+        <div class="dis1">
+          <label for="Month-choice"
+            >აირჩიე თვე:&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+          </label>
+          <input list="Month-Days" id="Month-choice" name="Month-choice" />
+          <datalist id="Month-Days">
+            <option value="იანვარი"></option>
+            <option value="თებერვალი"></option>
+            <option value="მარტი"></option>
+            <option value="აპრილი"></option>
+            <option value="მაისი"></option>
+            <option value="ივნისი"></option>
+            <option value="ივლისი"></option>
+            <option value="აგვისტო"></option>
+            <option value="სექტემბერი"></option>
+            <option value="ოქტომბერი"></option>
+            <option value="ნოემბერი"></option>
+            <option value="დეკემბერი"></option>
+          </datalist>
+        </div>
+
+        <div class="dis2">
+          <label for="Number">აირჩიე რიცხვი: &nbsp; &nbsp; </label>
+          <input
+            type="number"
+            id="number"
+            name="name"
+            required
+            minlength="8"
+            maxlength="8"
+            size="10"
+          />
+        </div>
+
+        <div class="dis3" id="dis33">
+          <button class="button" type="button">კლიკ!</button>
+        </div>
+
+        <div id="diss1"><h1 class="date-first">თვე,დღე</h1></div>
+        <div id="diss2"><h1 class="date">00:00:00</h1></div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
