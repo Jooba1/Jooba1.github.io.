@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #ccccff;
+  font-family: fantasy;
+}
+
+body {
+  margin-top: 180px;
+  margin-bottom: 180px;
+}
+
+.section {
+  position: relative;
+
+  width: 900px;
+  height: auto;
+  margin: auto;
+  align-content: center;
+  border-radius: 40px;
+}
+.box {
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 200px;
+  border-radius: 40px;
+  opacity: 70%;
+  background-color: #cce5ff;
+}
+.section > .box > div {
+  margin: 10px 20px;
+  padding: 20px;
+  text-align: center;
+  opacity: 90%;
+  /* background-color: white; */
+}
+
+.button {
+  padding: 10px;
+  border-radius: 10px;
+}
+#dis33 {
+  padding: 0px;
+}
+#diss1,
+#diss2 {
+  display: none;
+}
+
+.dis1,
+.dis2,
+.dis3 {
+  /* display: none; */
+}
+
+.head {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  border-radius: 10px;
+  font-family: fantasy;
+  opacity: 70%;
+}
+
+#number,
+#Month-choice {
+  padding: 5px;
+  border-radius: 6px;
+}
+
+@media (max-width: 1000px) {
+  .box {
+    flex-direction: column;
+    height: auto;
+  }
+  .section {
+    width: auto;
+  }
+  html {
+    font-size: 70%;
+  }
+}
