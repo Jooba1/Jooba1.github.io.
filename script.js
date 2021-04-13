@@ -148,7 +148,7 @@ const Working = function (Date) {
   seconds = now.getSeconds();
   //გამოვიანგაროშოთ რამდენი საათი, წუთი და წამი დარჩა დღის დასრულებამდე
   
- RemHour = 24 - (hour >= 12 ? hour - 12 : hour);
+  RemHour = 24 -  hour;
   RemMin = 60 - minutes;
   RemSec = 60 - seconds;
   //გადავიყვანოთ მოცემული პარამეტრები წამებში რადგან შევძლოთ დროის უკუთვლა
